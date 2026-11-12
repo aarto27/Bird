@@ -457,6 +457,23 @@ kbd {
     font-weight: 700;
 }
 
+.credits-badge {
+    position: fixed;
+    right: max(14px, env(safe-area-inset-right));
+    bottom: max(12px, env(safe-area-inset-bottom));
+    z-index: 25;
+    pointer-events: none;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(255, 251, 235, 0.9);
+    border: 2.5px solid var(--ink);
+    box-shadow: 0 3px 0 var(--ink), 0 6px 14px rgba(0, 0, 0, 0.18);
+    font-size: clamp(0.76rem, 2.2vw, 0.9rem);
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: 0.02em;
+}
+
 @keyframes floatPrompt {
     from {
         transform: translateY(0);
